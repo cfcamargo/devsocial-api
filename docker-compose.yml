@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:17
+    container_name: devsocial_api
+    environment:
+      POSTGRES_USER: devsocial
+      POSTGRES_PASSWORD: devsocial
+      POSTGRES_DB: devsocial_db
+    ports:
+      - "5432:5432"
